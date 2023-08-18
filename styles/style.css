@@ -1,0 +1,198 @@
+html{
+	/* background-image: linear-gradient(to right,black,grey); */
+	z-index: 2;
+}
+
+.btns{
+	margin: 2px;
+	flex: 1;
+	transition: 0.5s;
+	font-size:large;
+}
+
+.btns:hover{
+	transform: scale(1.03);
+	flex-grow: 1.25;
+	/* transform: scale(0.95); */
+}
+
+.bar:hover{
+	transform: scale(1.02);
+	flex-grow: 0.05;
+}
+
+.sortingoptions{
+	position: relative;
+	/* background-color: aqua; */
+	transition: 0.5s;
+	height: 80px;
+}
+
+.button-container{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding: 0.5%;
+	top: 10px;
+	height: 60px;
+	width: 70%;
+	left: 25%;
+	flex: 1;
+	justify-content: center;
+}
+
+.manipulation{
+	display: flex;
+	flex-direction: column;
+	top: 50%;
+	width: 15%;
+	/* padding: 1.5%; */
+	padding-left: 1.5%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	margin: 1%;
+
+	/* background-color:coral; */
+	justify-content: space-between;
+}
+
+.manipulation button{
+	width: 170px;
+	height: 50px;
+	flex-grow: 2;
+}
+
+.bars{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1%;
+	border: 1%;
+	top: 15%;
+	height: 80%;
+	left: 19%;
+	/* background-color:deepskyblue; */
+	/* background-color:deepskyblue;
+	background-color: lineargradient(deepskyblue); */
+	/* background-image: linear-gradient(to right,deepskyblue,blue); */
+	width: 80%;
+}
+
+.algos{
+	/* background-color: grey; */
+	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	width: 17%;
+	/* height: 480px; */
+	padding: 1%;
+	border: 1px solid black;
+	margin: 1%;
+	transform: translateX(-108%);
+}
+
+.bar{
+	margin: 1px;
+	border: 2px solid black;
+	/* position: relative; */
+	/* border-right: 0; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.inswapPhase{
+	background-color: greenyellow;
+	/* flex-grow: 2; */
+}
+
+.insortingProcess{
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+	color: black;
+}
+
+label{
+	background-color: aqua;
+	justify-content: center;
+	text-align: center;
+	transform: translateX(-30px);
+}
+
+.bouncy:hover{
+	animation:bouncy 5s infinite linear;
+	position:relative;
+}
+@keyframes bouncy {
+	0%{top:0em}
+	40%{top:0em}
+	43%{top:-0.9em}
+	46%{top:0em}
+	48%{top:-0.4em}
+	50%{top:0em}
+	100%{top:0em;}
+}
+
+.isSortedBar{
+	transition: 0.5s;
+	transform: scale(1.1);
+}
+
+.rred{
+	margin-bottom: 4px;
+	margin-top: 2px;
+	height: 40px;
+	width: 40px;
+	background-color: red;
+}
+
+.ddeepskyblue{
+	margin-top: 2px;
+	margin-bottom: 4px;
+	height: 40px;
+	width: 40px;
+	background-color: deepskyblue;
+}
+
+.ggreenyellow{
+	margin-top: 2px;
+	margin-bottom: 4px;
+	height: 40px;
+	width: 40px;
+	background-color: greenyellow;
+}
+
+.yyellow{
+	margin-top: 2px;
+	margin-bottom: 4px;
+	height: 40px;
+	width: 40px;
+	background-color: yellow;	
+}
+.ccoral{
+	margin-top: 2px;
+	margin-bottom: 4px;
+	height: 40px;
+	width: 40px;
+	background-color: coral;	
+}
+
+.algoclass{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	text-align: center;
+	transition: 0.5s;
+}
+.algoclass:hover{
+	transform: scale(1.1);
+}
+h4:hover{
+	transform: scaleY(1.2);
+}
+
+.popOut{
+	transform: translateX(0%);
+}

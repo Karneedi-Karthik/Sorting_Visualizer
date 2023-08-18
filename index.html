@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sorting Visualizer</title>
+	<link rel="shortcut icon" href="./styles/images/icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="./styles/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+	
+	<!-- container for sorting options -->
+	<div class="sortingoptions">
+		<!-- sub container for positioning -->
+		<div class="button-container">
+			<!-- buttons -->
+			<button type="button" class="btn btn-outline-primary btns bouncy bubble-sort">Bubble Sort</button>
+			<button type="button" class="btn btn-outline-primary btns bouncy insertion-sort">Insertion Sort</button>
+			<button type="button" class="btn btn-outline-primary btns bouncy selection-sort">Selection Sort</button>
+			<button type="button" class="btn btn-outline-primary btns bouncy quick-sort">Quick Sort</button>
+			<button type="button" class="btn btn-outline-primary btns bouncy merge-sort">Merge Sort</button>
+		</div>
+	</div>
+
+	<!-- container for the manipulation section -->
+	<div class="manipulation">
+
+		<!-- buttons and inputs -->
+
+		<button type="button" class="btn btn-outline-primary btns createArray">New Array</button>
+
+		<button type="button" class="btn btn-outline-primary btns arraySizeBtn">Array Size</button>
+		<input class='arraySize' type="range" value=30 min=2 max=100></input>
+
+		<button type="button" class="btn btn-outline-primary btns sortingSpeedBtn">Sorting Speed</button>
+		<input class='sortingSpeed' type="range" value=14 min=2 max=50></input>
+
+	</div>
+
+
+	<!-- container for bar field -->
+	<div class="bars"></div>
+
+	<!-- container for description -->
+	<div class="algos">
+		<!-- description comes here -->
+	</div>
+
+	<!-- source tags -->
+	<script src="./js/bootstrap/bootstrap.min.js"></script>
+	<script src="./js/utility/index.js"></script>
+	<script src="./js/utility/sortingOptions/bubble-sort.js"></script>
+	<script src="./js/utility/sortingOptions/insertion-sort.js"></script>
+	<script src="./js/utility/sortingOptions/selection-sort.js"></script>
+	<script src="./js/utility/sortingOptions/quick-sort.js"></script>
+	<script src="./js/utility/sortingOptions/merge-sort.js"></script>
+
+</body>
+</html>
